@@ -25,8 +25,7 @@ const getData = async () =>
 
 
       if (data === "") {
-        alert("Please enter a city name!"); // show popup alert
-        return;
+        alert("Please enter a city name!"); 
       }
     let final_url = `https://api.openweathermap.org/data/2.5/weather?q=${data}&appid=${API_KEY}&units=metric`;
 let response = await fetch (final_url);
